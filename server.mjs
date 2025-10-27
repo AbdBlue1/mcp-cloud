@@ -9,11 +9,11 @@ if (!fs.existsSync(PROJECTS_DIR)) {
   fs.mkdirSync(PROJECTS_DIR, { recursive: true });
 }
 
-// Create the MCP server
+// Create MCP server
 const server = new MCPServer({
-  name: "cloud-mcp",
+  name: "cloud-mcp-free",
   version: "1.0.0",
-  description: "Claude MCP server hosted on Render",
+  description: "Claude MCP server hosted on Render free plan",
 });
 
 // Tool: Run code
@@ -41,7 +41,6 @@ server.tool("write_file", async ({ path, content }) => {
   return { status: "saved" };
 });
 
-// Start the MCP server
+// Start server
 server.start();
-
 console.log("✅ MCP server started. Listening for Claude connections...");
