@@ -1,18 +1,8 @@
 {
   "name": "cloud-mcp",
   "version": "1.0.0",
-  "description": "Claude MCP server hosted on Render",
   "type": "module",
-  "main": "server.mjs",
-  "scripts": {
-    "start": "node server.mjs"
-  },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "github:modelcontextprotocol/sdk"
-  },
-  "engines": {
-    "node": ">=18.0.0"
-  },
-  "author": "AbdBlue1",
-  "license": "MIT"
+    "@modelcontextprotocol/sdk": "https://github.com/modelcontextprotocol/sdk.git"
+  }
 }
